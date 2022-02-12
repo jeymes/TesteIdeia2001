@@ -4,7 +4,13 @@
 <head>
     <title>Ideia2001</title>
 
+    
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
+
     <link rel="stylesheet" href="./style/styles.css">
+
+    <!-- styles Responsive -->
+    <link rel="stylesheet" href="./style/responsive.css">
 </head>
 
 <body>
@@ -16,12 +22,20 @@
                 <img src="./img/logo.png" alt="Logo">
             </div>
 
-            <nav class="ContainerMenu">
-                <a href="#">Home</a>
-                <a href="#">Eventos</a>
-                <a href="#">Usuários</a>
-                <a href="#">Relatórios</a>
-            </nav>
+            <div class="ContainerMenu">
+                <div>
+                    <a href="#">Home</a>
+                </div>
+                <div>
+                    <a href="#">Eventos</a>
+                </div>
+                <div>
+                    <a href="#">Usuários</a>
+                </div>
+                <div>
+                    <a href="#">Relatórios</a>
+                </div>
+            </div>
 
             <div class="ContainerLogin">
                 <img src="./img/user.png" alt="Usuário">
@@ -31,44 +45,71 @@
                 </div>
             </div>
 
+
+            <div class="menu">
+                <input type="checkbox" id="bt-menu" />
+                <label for="bt-menu">&#9776</label>
+
+
+                <div class="option">
+                    <a href="#">
+                        <li>Home</li>
+                    </a>
+                    <a href="#">
+                        <li>Eventos</li>
+                    </a>
+                    <a href="#">
+                        <li>Usuários</li>
+                    </a>
+                    <a href="#">
+                        <li>Relatórios</li>
+                    </a>
+                    <a href="#">
+                        <li>Login</li>
+                    </a>
+                    
+                </div>
+            </div>
+
+
         </div>
     </header>
 
     <div class="BarraOrange"></div>
 
-        <div class="ContainerHome">
-            <div class="ContainerCards">
+    <div class="ContainerHome">
+        <div class="ContainerCards">
 
-                <div class="TituloCard">
-                    <p>Olá <a>Jemerson Sousa,</a>  selecione uma das opções abaixo: </p>
+            <div class="TituloCard">
+                <p>Olá <a>Jemerson Sousa,</a> selecione uma das opções abaixo: </p>
+            </div>
+
+            <div class="Cards">
+                <div class="MeusEventos">
+                    <img src="./img/icone-eventos.png" alt="IconEventos">
+                    <span>Meus Eventos</span>
                 </div>
-                
-                <div class="Cards">
-                    <div class="MeusEventos">
-                        <img src="./img/icone-eventos.png" alt="IconEventos">
-                        <span>Meus Eventos</span>
-                    </div>
 
-                    <div class="Usuarios">
-                        <img src="./img/icone-usuarios.png" alt="IconUsuários">
-                        <span>Usuários</span>
-                    </div>
-
-                    <div class="Relatorio">
-                        <img src="./img/icone-relatorios.png" alt="IconRelatórios">
-                        <span>Relatorios</span>
-                    </div>
-
+                <div class="Usuarios">
+                    <img src="./img/icone-usuarios.png" alt="IconUsuários">
+                    <span>Usuários</span>
                 </div>
+
+                <div class="Relatorio">
+                    <img src="./img/icone-relatorios.png" alt="IconRelatórios">
+                    <span>Relatórios</span>
+                </div>
+
             </div>
         </div>
+    </div>
 
-        <footer class="ContainerFooter">
-            <div>
-                <a>Ideia 2001</a>
-                <p>@Copyright 2022 - Todos os direitos reservados</p>
-            </div>
-        </footer>
+    <footer class="ContainerFooter">
+        <div>
+            <a>Ideia 2001</a>
+            <p>@Copyright 2022 - Todos os direitos reservados</p>
+        </div>
+    </footer>
 
 
 </body>

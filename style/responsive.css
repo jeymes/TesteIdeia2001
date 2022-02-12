@@ -1,0 +1,135 @@
+:root {
+    --DarkOrange: #ec8923;
+    --DimGray: #696969;
+    --Black: #000000;
+    --Gainsboro:#EBEBEB;
+    --white: #fff
+}
+@media  (max-width: 900px){
+    .ContainerHome{
+        height: 100vh;
+    }
+    .ContainerCards{
+        width: 80%;
+    }
+    .ContainerMenu{
+        width: 50%;
+    }
+    .Cards div{
+        width: 30%;
+        height: 200px;
+    }
+}
+@media  (max-width: 800px){
+    .ContainerHome{
+        height: 100vh;
+    }
+    .ContainerLogin div p{
+        font-size: 12px;
+    }
+    .ContainerLogin img{
+        width: 35px;
+    }
+    .ContainerImg img{
+        width: 200px;
+    }
+    .Cards img{
+        width: 90px;
+    }
+}
+
+@media (max-width: 685px){
+    .Cards div{
+        width: 25%;
+        height: 150px;
+    }
+    .Cards img{
+        width: 70px;
+    }
+}
+@media (max-width: 685px){
+
+    /* dropdown */
+    .ContainerMenu, .ContainerLogin{
+        display: none;
+    }
+    .menu{
+        width: 200px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    label[for='bt-menu']{
+        display: block;
+        
+    }
+    .option{
+       width: 100px;
+       justify-content: center;
+       align-items: center;
+       margin-top: 50px;
+       display: none;
+       position: fixed;
+       z-index: 5;
+       background-color: var(--Gainsboro);
+    }
+    .option a{
+        text-align: center;
+        list-style-type: none;
+        text-decoration: none;
+        color: var(--Black);
+        
+    }
+    .option li{
+        padding: 10px 0;
+        color: var(--DimGray);
+    }
+    .option li:hover{
+        color: var(--DarkOrange);
+        font-size: 15px;
+    }
+    div #bt-menu:checked ~ .option{
+        display: block;
+    }
+}
+@media (max-width: 600px){
+    .BarraOrange{
+        height: 100px;
+    }
+    .ContainerHome{
+        height: 70vh;
+    }
+    .ContainerCards{
+        width: 90%;
+        bottom: 50px;
+    }
+    .Cards img{
+        width: 50px;
+    }
+    .Cards div{
+        width: 30%;
+        height: 150px;
+    }
+    .Cards div span{
+        font-size: 15px;
+    }
+    .TituloCard{
+        width: 80%;
+        text-align: center;
+    }
+    .ContainerFooter a{
+        text-align: center;
+        font-size: 12px;
+    }
+    .ContainerFooter p{
+        text-align: center;
+        font-size: 12px;
+    }
+}
+@media (max-width: 478px){
+    .Cards div{
+        height: 120px;
+    }
+    .ContainerImg img{
+        width: 150px;
+    }
+}
