@@ -1,0 +1,155 @@
+:root {
+    --DarkOrange: #ec8923;
+    --DimGray: #696969;
+    --Black: #000000;
+    --Gainsboro:#EBEBEB;
+    --white: #fff
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    
+}
+.ContainerHeader{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+.ContainerImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    cursor: pointer;
+    /* border: 1px solid red; */
+}
+.ContainerMenu{
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 1px solid red; */
+}
+.ContainerMenu a{
+    height: 30px;
+    color: var(--DimGray);
+    text-decoration: none
+    
+}
+.ContainerMenu a:hover{
+    color: var(--Black);
+    border-bottom: 3px solid var(--DarkOrange);
+    
+}
+
+.ContainerLogin{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+.ContainerLogin img{
+    cursor: pointer;
+}
+.ContainerLogin div{
+    margin-left: 5px;
+    text-align: end;
+    cursor: pointer;
+}
+.ContainerLogin div a{
+    font-size: 12px;
+    color: var(--DarkOrange);
+}
+.ContainerLogin div a:hover{
+    color: var(--Black);
+}
+.ContainerLogin div p{
+    font-size: 15px;
+    color: var(--DimGray);
+}
+
+/* BarraOrange!! */
+
+.BarraOrange{
+    width: 100%;
+    height: 150px;
+    background-color: var(--DarkOrange);
+}
+
+/* Home! */
+
+.ContainerHome{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: var(--Gainsboro);
+    
+}
+.ContainerCards{
+    width: 70%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    position: relative;
+    bottom: 80px;
+    z-index: 1;
+}
+.TituloCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* border: 1px solid red; */
+    color: var(--DimGray);
+}
+a{
+    color: black;
+}
+.Cards{
+    display: flex;
+    width: 100%;
+    height: 350px;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+.Cards div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 28%;
+    height: 230px;
+    border-radius: 25px;
+    background: linear-gradient(#fff, #EBEBEB);
+    border: 1px solid #EBEBEB;
+    cursor: pointer;
+    /* border: 1px solid red; */
+}
+.ContainerFooter div{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Black);
+}
+.ContainerFooter a{
+    color: var(--DarkOrange);
+}
+.ContainerFooter p{
+    color: var(--DimGray);
+    margin-left: 5px;
+}
