@@ -33,7 +33,7 @@
     justify-content: space-around;
 }
 .ContainerMenu a{
-    height: 100px;
+    padding: 5px;
     color: var(--DimGray);
     text-decoration: none
     
@@ -118,6 +118,7 @@ label[for='bt-menu']{
     position: relative;
     bottom: 80px;
     z-index: 1;
+    border-radius: 5px;
 }
 .TituloCard{
     display: flex;
@@ -158,6 +159,7 @@ a{
 }
 .Cards div span{
     text-align: center;
+    font-size: 20px;
 }
 
 /* footer da pag */
