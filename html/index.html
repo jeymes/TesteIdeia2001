@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt">
 
-<head>
-    <title>Ideia2001</title>
-
-    
+<head>  
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
-
-    <link rel="stylesheet" href="./style/styles.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../style/styles.css">
 
     <!-- styles Responsive -->
-    <link rel="stylesheet" href="./style/responsive.css">
+
+    <link rel="stylesheet" href="../style/responsive.css">
+
+    <title>Ideia2001</title>
 </head>
 
 <body>
@@ -19,7 +20,7 @@
         <div class="ContainerHeader">
 
             <div class="ContainerImg">
-                <img src="./img/logo.png" alt="Logo">
+                <img src="../img/logo.png" alt="Logo">
             </div>
 
             <div class="ContainerMenu">
@@ -38,10 +39,10 @@
             </div>
 
             <div class="ContainerLogin">
-                <img src="./img/user.png" alt="Usuário">
+                <img src="../img/user.png" alt="Usuário">
                 <div>
                     <p>Jemerson Sousa</p>
-                    <a href="#">Desconectar</a>
+                    <a class="Desconectar">Desconectar</a>
                 </div>
             </div>
 
@@ -64,9 +65,6 @@
                     <a href="#">
                         <li>Relatórios</li>
                     </a>
-                    <a href="#">
-                        <li>Login</li>
-                    </a>
                     
                 </div>
             </div>
@@ -86,17 +84,17 @@
 
             <div class="Cards">
                 <div class="MeusEventos">
-                    <img src="./img/icone-eventos.png" alt="IconEventos">
+                    <img src="../img/icone-eventos.png" alt="IconEventos">
                     <span>Meus Eventos</span>
                 </div>
 
                 <div class="Usuarios">
-                    <img src="./img/icone-usuarios.png" alt="IconUsuários">
+                    <img src="../img/icone-usuarios.png" alt="IconUsuários">
                     <span>Usuários</span>
                 </div>
 
                 <div class="Relatorio">
-                    <img src="./img/icone-relatorios.png" alt="IconRelatórios">
+                    <img src="../img/icone-relatorios.png" alt="IconRelatórios">
                     <span>Relatórios</span>
                 </div>
 
@@ -111,7 +109,21 @@
         </div>
     </footer>
 
+    <div id="modal-Desconectar" class="ContainerModal">
 
+        <div class="Modal">
+            <h3 class="Subtitulo"> Deseja Realmete Sair?</h3>
+        </div>
+
+            <div class="ContainerButton">
+                <button class="Button">Nâo</button>
+                <button class="Button">Sim</button>
+            </div>
+
+    </div>
+
+
+    <script src="../js/index.js"></script>
 </body>
 
 </html>

@@ -19,6 +19,24 @@
         width: 30%;
         height: 200px;
     }
+    .ContainerButton{
+        margin-right: 10px;
+        width: 200px;
+        height: 20px;
+    }
+    .Modal{
+        margin-right: 10px;
+        width: 200px;
+        height: 50px;
+        padding: 15px;
+    }
+    .Modal h3{
+        font-size: 15px;
+    }
+    .Button{
+        width: 90px;
+        height: 30px;
+    }
 }
 @media  (max-width: 800px){
     .ContainerHome{
@@ -47,14 +65,15 @@
         width: 70px;
     }
 }
+/* dropdown mobile */
+
 @media (max-width: 685px){
 
-    /* dropdown */
-    .ContainerMenu, .ContainerLogin{
+    .ContainerMenu{
         display: none;
     }
     .menu{
-        width: 200px;
+        width: 0px;
         display: flex;
         justify-content: flex-end;
     }
@@ -70,7 +89,9 @@
        display: none;
        position: fixed;
        z-index: 5;
-       background-color: var(--Gainsboro);
+       background-color: var(--white);
+       border: 1px solid var(--DimGray);
+       box-shadow: 1px 1px 5px 1px var(--DimGray);
     }
     .option a{
         text-align: center;

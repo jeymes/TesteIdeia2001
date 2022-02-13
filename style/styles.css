@@ -19,25 +19,21 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* border: 1px solid red; */
 }
 .ContainerImg{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* width: 33%; */
     cursor: pointer;
-    /* border: 1px solid red; */
 }
 .ContainerMenu{
     width: 33%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    /* border: 1px solid red; */
 }
 .ContainerMenu a{
-    height: 30px;
+    height: 100px;
     color: var(--DimGray);
     text-decoration: none
     
@@ -49,17 +45,14 @@
 }
 
 .ContainerLogin{
-    /* width: 33%; */
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid red; */
 }
 .ContainerLogin img{
     cursor: pointer;
 }
 .ContainerLogin div{
-    /* border: 1px solid red; */
     margin-left: 5px;
     text-align: end;
     cursor: pointer;
@@ -73,7 +66,6 @@
 }
 .ContainerLogin div p{
     font-size: 15px;
-    /* border: 1px solid red; */
     color: var(--DimGray);
 }
 
@@ -132,7 +124,6 @@ label[for='bt-menu']{
     justify-content: center;
     align-items: center;
     width: 100%;
-    /* border: 1px solid red; */
     color: var(--DimGray);
 }
 a{
@@ -144,7 +135,6 @@ a{
     height: 350px;
     justify-content: space-evenly;
     align-items: center;
-    /* border: 1px solid red; */
 }
 .Cards div{
     display: flex;
@@ -157,11 +147,20 @@ a{
     background: linear-gradient(#fff, #EBEBEB);
     border: 1px solid #EBEBEB;
     cursor: pointer;
-    /* border: 1px solid red; */
+    transform: scale(0.9);
+}
+.Cards div:hover{
+    border:  1px solid var(--DarkOrange);
+    box-shadow: 0.5px 0.5px 10px 0.5px var(--DarkOrange);
+    transform: scale(1);
+    transition: 0.3s;
+    
 }
 .Cards div span{
     text-align: center;
 }
+
+/* footer da pag */
 .ContainerFooter div{
     display: flex;
     width: 100%;
@@ -176,4 +175,67 @@ a{
 .ContainerFooter p{
     color: var(--DimGray);
     margin-left: 5px;
+}
+
+/* modal desconectar */
+
+.ContainerModal{
+    width: 100%;
+    height: 35vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.Mostrar{
+    display: flex;
+}
+@keyframes Modal{
+    from{
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+.Mostra .Modal{
+    animation: Modal .3s;
+}
+.Modal{
+    text-align: center;
+    background-color: #1c1c1c;
+    color: #EBEBEB;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0.5px 0.5px 10px 0.5px #1c1c1c;
+    border: 1px solid #1c1c1c;
+    margin-right: 100px;
+    
+}
+.ContainerButton{
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 100px;
+}
+.Button{
+    width: 100px;
+    height: 30px;
+    border: 0;
+    background-color: #1c1c1c;
+    color: #EBEBEB;
+    box-shadow: 0.5px 0.5px 10px 0.5px #1c1c1c;
+}
+.Button:hover{
+    background-color: var(--Gainsboro);
+    box-shadow: 1px 1px 10px 0.5px #1c1c1c;
+    color: var(--Black);
 }
